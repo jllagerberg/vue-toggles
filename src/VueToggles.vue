@@ -83,6 +83,7 @@ export default {
       default: 'normal',
     },
   },
+  emits: ['click'],
   computed: {
     bgStyle() {
       const styles = {

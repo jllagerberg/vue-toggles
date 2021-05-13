@@ -131,7 +131,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 body {
   min-height: 100vh;
   background: #faf9fd;
@@ -143,76 +143,76 @@ body {
   flex-direction: column;
   color: #000;
   height: 100vh;
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+.toggles {
+  display: flex;
+  align-items: center;
+}
 
-    .wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 25px;
+.toggles p {
+  font-size: 12px;
+  margin-right: 10px;
+}
 
-      .inputs {
-        display: flex;
-        flex-direction: column;
+.vue-toggles {
+  margin-right: 10px;
+  transition: border ease 0.2s;
+}
 
-        label {
-          font-size: 12px;
-          margin-bottom: 5px;
-        }
+.vue-toggles:last-child {
+  margin-right: 0;
+}
 
-        input {
-          color: #2e2e2e;
-          font-size: 14px;
-          padding: 8px 10px;
-          border: 1px solid #d2d6dc;
-          border-radius: 6px;
-          margin-bottom: 10px;
-        }
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
-        input[type='color'] {
-          padding: 0;
-          width: 100%;
-          height: 35px;
-        }
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
 
-        .radio-wrapper {
-          display: flex;
-          align-items: center;
-          height: 45px;
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
 
-          input[type='radio'] {
-            margin-right: 5px;
-          }
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 
-          label {
-            margin-right: 10px;
-          }
-        }
-      }
-    }
+input {
+  color: #2e2e2e;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #d2d6dc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
 
-    .toggles {
-      display: flex;
-      align-items: center;
+input[type='color'] {
+  padding: 0;
+  width: 100%;
+  height: 35px;
+}
 
-      p {
-        font-size: 12px;
-        margin-right: 10px;
-      }
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
 
-      .vue-toggles {
-        margin-right: 10px;
-        transition: border ease 0.2s;
+input[type='radio'] {
+  margin-right: 5px;
+}
 
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
+label {
+  margin-right: 10px;
 }
 </style>

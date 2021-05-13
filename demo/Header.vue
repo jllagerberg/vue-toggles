@@ -76,7 +76,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 header {
   position: relative;
   display: flex;
@@ -84,39 +84,39 @@ header {
   justify-content: center;
   background: #1f2a3a;
   padding: 50px 0;
+}
 
-  .title-page-wrapper {
-    background: linear-gradient(to bottom right, #ffffff, #5850ec);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-  }
+.title-page-wrapper {
+  background: linear-gradient(to bottom right, #ffffff, #5850ec);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
 
-  .logos {
-    position: absolute;
-    top: 0;
-    right: 40px;
-    display: flex;
-    align-items: center;
-    height: 100%;
+.logos {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
-    a {
-      height: max-content;
-      margin-right: 20px;
+a {
+  height: max-content;
+  margin-right: 20px;
+}
 
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+a:last-child {
+  margin-right: 0;
+}
 
-    svg {
-      height: max-content;
-      width: 50px;
+svg {
+  height: max-content;
+  width: 50px;
+}
 
-      .st0 {
-        fill: none;
-      }
-    }
-  }
+svg .st0 {
+  fill: none;
 }
 </style>

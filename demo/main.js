@@ -1,11 +1,8 @@
-import Vue from 'vue';
-import App from '@/App.vue';
-import VueToggles from '../src/VueToggles.vue';
+import { createApp } from 'vue';
+import App from './App.vue';
+import VueToggles from '../src/VueToggles';
 
-Vue.component('VueToggles', VueToggles);
+const app = createApp(App);
 
-Vue.config.productionTip = false;
-
-new Vue({
-  render: (h) => h(App),
-}).$mount('#app');
+app.component('VueToggles', VueToggles);
+app.mount('#app');

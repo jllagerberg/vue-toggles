@@ -3,6 +3,7 @@ import css from 'rollup-plugin-css-only'; // Export CSS as a separate file for S
 import commonjs from '@rollup/plugin-commonjs'; // Convert CommonJS modules to ES6
 import buble from '@rollup/plugin-buble'; // Transpile/polyfill with reasonable browser support
 import filesize from 'rollup-plugin-filesize';
+import vuePlugin from 'rollup-plugin-vue';
 
 export default [
   {
@@ -16,6 +17,7 @@ export default [
         css: true, // Dynamically inject css as a <style> tag
         compileTemplate: true, // Explicitly convert template to render function
       }),
+      vuePlugin(),
       commonjs(),
       buble(),
       filesize(),
