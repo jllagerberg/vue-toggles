@@ -17,7 +17,7 @@ export default [
         css: true, // Dynamically inject css as a <style> tag
         compileTemplate: true, // Explicitly convert template to render function
       }),
-      vuePlugin(),
+      vuePlugin({ css: false }),
       commonjs(),
       buble(),
       filesize(),
@@ -33,7 +33,9 @@ export default [
       css(),
       vue({
         css: false, // Disable css injecting as a <style> tag
+        template: { optimizeSSR: true },
       }),
+      vuePlugin({ target: 'node', css: false }),
       commonjs(),
       buble(),
       filesize(),
